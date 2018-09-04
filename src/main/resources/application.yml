@@ -1,0 +1,20 @@
+logging:
+  level:
+    .: INFO
+    org.springframework: INFO
+
+---
+
+spring:
+  profiles: chaos-monkey
+  main:
+    banner-mode: "off"
+
+# Spring Cloud Chaos Configuration
+chaos.monkey.enabled: true
+chaos.monkey.assaults.latencyActive: true
+#chaos.monkey.watcher.controller: true
+chaos.monkey.assaults.level: 3
+management.endpoint.chaosmonkey.enabled: true
+management.endpoint.chaosmonkeyjmx.enabled: true
+management.endpoints.web.exposure.include: "*"

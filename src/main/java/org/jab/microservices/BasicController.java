@@ -1,15 +1,15 @@
 package org.jab.microservices;
 
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-import javax.servlet.http.HttpServletResponse;
-
-@Controller
+@RestController
+@RequestMapping(path="/api")
 public class BasicController {
      
-    @GetMapping("/api/concept1")
-    public ConceptReponse redirectToStatic() throws Exception {
+    @GetMapping(path="concept1")
+    public ConceptReponse getConcept1() throws Exception {
         return new ConceptReponse("Hello World");
     }
 
