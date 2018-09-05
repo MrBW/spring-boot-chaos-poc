@@ -24,7 +24,7 @@ chaos.monkey.assaults.exceptionsActive: true
 chaos.monkey.assaults.killApplicationActive: true
 
 chaos.monkey.watcher.controller: false
-#chaos.monkey.watcher.restController: true
+chaos.monkey.watcher.restController: true
 chaos.monkey.watcher.service: false
 chaos.monkey.watcher.repository: false
 chaos.monkey.watcher.component: false
