@@ -2,6 +2,7 @@ logging:
   level:
     .: INFO
     org.springframework: INFO
+    de.codecentric.spring.boot.chaos: DEBUG
 
 ---
 
